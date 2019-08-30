@@ -5,7 +5,7 @@ import './App.css';
 function Nhi() {
   return (
     <div className="Nhi">
-      
+      <div className='btn btn-primary'>Hello</div>
     </div>
   );
 }
