@@ -4,6 +4,7 @@ import './index.css';
 import Nhi from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
+import './assets/stylesheets/common.scss';
 
 ReactDOM.render(<Nhi />, document.getElementById('root'));
 
