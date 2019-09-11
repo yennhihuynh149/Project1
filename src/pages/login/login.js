@@ -1,14 +1,18 @@
 import React from 'react';
-
+import './login.scss';
+import {Form, Button} from 'react-bootstrap';
 
 class LoginPage extends React.Component {
     render() {
         return (
-            <div>
-                <h1>Login Page</h1>
-                
-            </div>
-
+            <React.Fragment>
+                <div className="main">
+                    <div className="login">
+                        <div className="circle">
+                        </div>
+                    </div>
+                </div>
+            </React.Fragment>
         )
     }
 }

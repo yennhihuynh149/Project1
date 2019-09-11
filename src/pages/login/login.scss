@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+   }
+   body {
+    padding: 0;
+    margin: 0;
+   }
+   .main {
+    background: #c2c2c2;
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    padding: 10% 15% 5% 15%;
+    .login {
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      background: #EF6C00;
+      position: relative;
+      .circle {
+        $radius: 150px;
+        width: $radius;
+        height: $radius;
+        border-radius: 50%;
+        background: #c2c2c2;
+        left: 50%;
+        margin-left: -75px;
+        margin-top: -75px;
+        position: absolute;
+        &:after {
+          width: 95%;
+          height: 95%;
+          background: red;
+          border: 2px solid white;
+          margin-left: -47.5%;
+          left: 50%;
+          position: absolute;
+          content: '';
+          border-radius: 50%;
+        }
+      }
+    }
+   }
