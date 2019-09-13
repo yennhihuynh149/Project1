@@ -4,6 +4,7 @@ import LoginPage from '../pages/login/login';
 import DashBoard from '../pages/dashboard/dashboard';
 import Profile from '../pages/profile/profile';
 import HomePage from '../pages/home/home';
+import TuyenDung from '../pages/tuyen dung/tuyen-dung';
 
 class MainRouter extends React.Component {
     render() {
@@ -15,6 +16,7 @@ class MainRouter extends React.Component {
                     <Route path='/dashboard' exact component={DashBoard}></Route>
                     <Route path='/profile' exact component={Profile}></Route>
                     <Route path='/home' exact component={HomePage}></Route>
+                    <Route path='/tuyen-dung' exact component={TuyenDung}></Route>
                 </Switch>
             </BrowserRouter>
         )
