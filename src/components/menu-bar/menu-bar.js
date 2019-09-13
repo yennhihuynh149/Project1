@@ -24,7 +24,7 @@ class MenuBar extends React.Component {
                             <Nav.Link href="/">Tuyển dụng</Nav.Link>
                         </Nav>
                         <Form inline>
-                            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                            <FormControl type="text" placeholder="Tìm kiếm" className="mr-sm-2" />
                             <Button variant="outline-success">Tìm kiếm</Button>
                         </Form>
                     </Navbar.Collapse>
