@@ -5,12 +5,19 @@ import DashBoard from '../pages/dashboard/dashboard';
 import Profile from '../pages/profile/profile';
 import HomePage from '../pages/home/home';
 import TuyenDung from '../pages/tuyen dung/tuyen-dung';
+import Auth from '../serviecs/auth/auth';
 
-class MainRouter extends React.Component {
-    render() {
-        return(
-            <BrowserRouter>
+const MainRouter = () => (
+    <main>
+        <BrowserRouter>
                 <Switch>
+                    <Route exact path = '/' render = {
+                        () => (
+                            <Auth orRedirectTo = '/login' orRender = {
+                                <Profile></Profile>
+                            }></Auth>
+                        )
+                    }></Route>
                     <Route path='/' exact component={HomePage}></Route>
                     <Route path='/login' exact component={LoginPage}></Route>
                     <Route path='/dashboard' exact component={DashBoard}></Route>
@@ -19,8 +26,7 @@ class MainRouter extends React.Component {
                     <Route path='/tuyen-dung' exact component={TuyenDung}></Route>
                 </Switch>
             </BrowserRouter>
-        )
-    }
-}
+    </main>
+)
 
 export default MainRouter
