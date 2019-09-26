@@ -3,7 +3,7 @@ import Cookies from 'universal-cookie'
 import {Redirect} from 'react-router-dom'
 
 class Auth extends React.Component {
-    contructor(props) {
+    constructor(props) {
         super(props)
         const cookies = new Cookies()
         this.state = {

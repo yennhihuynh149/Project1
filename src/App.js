@@ -2,7 +2,6 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import LoginPage from './pages/login/login';
-import Profile from './pages/profile/profile';
 import DashBoard from './pages/dashboard/dashboard';
 import MainRouter from './config/route';
 import HeaderElement from './components/header/header';

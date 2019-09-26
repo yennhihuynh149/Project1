@@ -12,7 +12,7 @@
     margin: auto;
     padding: 10% 15% 5% 15%;
     .login {
-      width: 100%;
+      width: 50%;
       height: 100%;
       margin: auto;
       background: #EF6C00;
@@ -38,6 +38,12 @@
           content: '';
           border-radius: 50%;
         }
+      }
+      .form{
+        position: absolute;
+        margin: auto;
+        margin-top: 70px;
+        margin-left: 60px;
       }
     }
    }
