@@ -1,13 +1,13 @@
 import React from 'react';
 import './login.scss';
-import {Form, Button} from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 import Cookies from 'universal-cookie';
 import { Redirect } from 'react-router-dom';
 import { locale } from '../../config/locale';
 
 class LoginPage extends React.Component {
 
-  constructor(){
+  constructor() {
     super()
     this.state = {
       logined: false
@@ -26,22 +26,47 @@ class LoginPage extends React.Component {
 
   renderDirectTo() {
     if (this.state.logined) {
-      return <Redirect to = '/home'></Redirect>
+      return <Redirect to='/home'></Redirect>
     }
   }
   render() {
-      return (
-          <React.Fragment>
-            {this.renderDirectTo()}
-              <div className="main">
-                  <div className="login">
-                      <div className="circle">
-                      </div>
-                  </div>
-                  <Button onClick={(e) => this.onClick(e)}>{locale.login}</Button>
+    return (
+      <React.Fragment>
+        {this.renderDirectTo()}
+        <div className="main">
+          <div className="login">
+            <div className="circle">
+            </div>
+            <div className="form">
+              <Form>
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label></Form.Label>
+                  <Form.Control type="text" placeholder="username" />
+                </Form.Group>
+                <Form.Group controlId="formBasicPassword">
+                  <Form.Label></Form.Label>
+                  <Form.Control type="password" placeholder="password" />
+                </Form.Group>
+                <Form.Group controlId="formBasicCheckbox">
+                  <Form.Check type="checkbox" label="Remember me?" />
+                </Form.Group>
+                <Button variant="danger" type="submit">
+                  {locale.login}
+                </Button>
+              </Form>
+              <div className="mt-4">
+                <div className="d-flex justify-content-center links">
+                  Don't have an account? <a href="#" className="ml-2">Sign Up</a>
+                </div>
+                <div className="d-flex justify-content-center links">
+                  <a href="#">Forgot your password?</a>
+                </div>
               </div>
-          </React.Fragment>
-      )
+            </div>
+          </div>
+        </div>      
+      </React.Fragment>
+    )
   }
 }
 

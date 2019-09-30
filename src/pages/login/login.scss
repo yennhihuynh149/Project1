@@ -12,10 +12,10 @@
     margin: auto;
     padding: 10% 15% 5% 15%;
     .login {
-      width: 100%;
+      width: 50%;
       height: 100%;
       margin: auto;
-      background: #EF6C00;
+      background: #FFCC99	;
       position: relative;
       .circle {
         $radius: 150px;
@@ -37,6 +37,20 @@
           position: absolute;
           content: '';
           border-radius: 50%;
+        }
+      }
+      .form{
+        position: absolute;
+        margin: auto;
+        margin-top: 80px;
+        margin-left: -25%;
+        left: 50%;
+        width: 50%;
+        .form-group {
+          &:first-child {
+            margin-bottom: 0;
+            
+          }
         }
       }
     }
