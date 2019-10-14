@@ -4,7 +4,7 @@ class HomePage extends React.Component{
     render(){
         return(
             <React.Fragment>
-                <div>Home Page</div>
+                
             </React.Fragment>
         )
     }
